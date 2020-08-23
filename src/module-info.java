@@ -7,4 +7,5 @@ module JavaFxEmailClientCourse {
 
     opens com.taku;
     opens com.taku.view;
+    opens com.taku.controller;
 }
