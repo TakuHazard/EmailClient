@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane prefHeight="620.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.taku.controller.MainWindowController">
+<AnchorPane prefHeight="620.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <MenuBar layoutX="7.0" layoutY="7.0" prefHeight="29.0" prefWidth="681.0">
+      <MenuBar prefHeight="36.0" prefWidth="714.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -31,8 +31,8 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TreeView fx:id="emailsTreeView" layoutY="36.0" prefHeight="593.0" prefWidth="223.0" />
-      <TableView fx:id="emailsTableView" layoutX="222.0" layoutY="36.0" prefHeight="210.0" prefWidth="489.0">
+      <TreeView fx:id="emailsTreeView" layoutY="36.0" prefHeight="593.0" prefWidth="223.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="36.0" />
+      <TableView fx:id="emailsTableView" layoutX="222.0" layoutY="36.0" prefHeight="210.0" prefWidth="489.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="36.0">
         <columns>
           <TableColumn prefWidth="96.0" text="Sender" />
           <TableColumn prefWidth="83.0" text="Subject" />
@@ -41,6 +41,6 @@
             <TableColumn prefWidth="114.0" text="Date" />
         </columns>
       </TableView>
-      <WebView fx:id="emailWebView" layoutX="222.0" layoutY="250.0" prefHeight="379.0" prefWidth="489.0" />
+      <WebView fx:id="emailWebView" layoutX="222.0" layoutY="250.0" prefHeight="379.0" prefWidth="489.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="241.0" />
    </children>
 </AnchorPane>
